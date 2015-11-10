@@ -19,3 +19,12 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "/home/ryanpeach/.vim/bundle/auto-pairs"]
+	path = /home/ryanpeach/.vim/bundle/auto-pairs
+	url = git://github.com/jiangmiao/auto-pairs.git
