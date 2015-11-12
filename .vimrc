@@ -19,25 +19,26 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "Tab Pages
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <C-Left> :tabprevious<CR>
+nnoremap <silent> <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
+nnoremap <silent> <C-Tab> <C-W><C-W>
+nnoremap <silent> <C-Up> :bn<CR>
+nnoremap <silent> <C-Down> :bp<CR>
 
 "Tabs
 set expandtab shiftwidth=4 softtabstop=4
 set autoindent
 
+"CUA hotkeys
+nnoremap <F2> :w !sudo tee %
+nnoremap <silent> <C-S> :w<cr>
+nnoremap <F4> :wq
+
+"Going to MYVIMRC
+nnoremap <F5> :e $MYVIMRC
+
 "Showing Hidden Characters
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-
-if list
-    noremap <C-a> :set list<CR>
-else
-    noremap <C-a> :set list&<CR>
-endif
-
-"CUA hotkeys
-nnoremap <C-s> :w<CR> 
-nnoremap <C-c> <y>
-nnoremap <C-q> :wq
+nnoremap <silent> <C-a> :set list!<CR>
