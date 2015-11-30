@@ -5,9 +5,10 @@ mkdir WS
 #Installing CAD and IDE's
 sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
 sudo add-apt-repository --yes ppa:js-reynaud/kicad-4
+sudo add-apt-repository ppa:peterlevi/ppa
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install eclipse kicad freecad freecad-doc inkscape
+sudo apt-get install eclipse kicad freecad freecad-doc inkscape variety
 
 #Installing Fundamental Tools
 sudo apt-get install git vim gparted g++ cmake
