@@ -12,9 +12,9 @@
 [core]
     editor = vim
 
-[url "git://github.com/"]
-    insteadOf = gh
+[url "https://github.com/"]
+    insteadOf = gh:
 
-[url "gh:ryanpeach/"]
-    insteadOf = ryan
+[url "https://github.com/ryanpeach/"]
+    insteadOf = ryan:
 
