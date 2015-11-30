@@ -1,6 +1,6 @@
 #Saving Workspace Location
 export WS=~/Documents/Workspace
-mkdir WS
+mkdir $WS
 
 #Installing CAD and IDE's
 sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
@@ -23,10 +23,10 @@ ln -s ${WS}/configfiles/.gitconfig ~/.gitconfig
 ln -s ${WS}/configfiles/.vimrc ~/.vimrc
 
 #Setup Workspace
-cd WS
+cd $WS
 git clone ryan:openscan
 git clone ryan:pcbuild
-cd ./openscan/.libs
+cd ./openscan/.lib
 sudo ./dependencies.sh
 
 #Clean
