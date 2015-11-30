@@ -1,0 +1,20 @@
+[user] 
+    name = Ryan Peach
+    email = ryan.peach@outlook.com
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    up = rebase
+    ci = commit
+
+[core]
+    editor = vim
+
+[url "git://github.com/"]
+    insteadOf = gh
+
+[url "gh:ryanpeach/"]
+    insteadOf = ryan
+
